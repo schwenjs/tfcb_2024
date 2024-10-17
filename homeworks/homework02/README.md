@@ -11,7 +11,7 @@ Replace the lines specified in _italics_ with your answers and save as a text fi
 
 Complete the interactive tutorial.
 
-_Did you hit any points of frustration, and if so, how could we improve the material to avoid that frustration?_
+I think vim was confusing to navigate, I appreciated the cheat sheet provided at the end of the workbook! I think maybe some more examples if people get stuck would be helpful but honestly the tutorial was very helpful :) I appreciated the thoroughness. The tutorial and the slides helped me get through problems #1 and problem #2. 
 
 
 ## Problem 1
@@ -52,8 +52,14 @@ sequence.gb<br>
 slides<br>
 vader.txt<br>
 
-_Paste your SCRIPT here (not the output)_
-
+```
+echo "My username is $USER" > question01.txt
+echo "My home directory is $HOME" >> question01.txt
+echo "The contents of the tfcb_2023/lectures/lecture04/ directory are" >> question01.txt
+echo "$(ls /Users/jschwens/CS_Files/tfcb_2024/lectures/lecture04)" >> question01.txt
+mkdir homework02
+mv question01.txt homework02/
+```
 
 ## Problem 2
 
@@ -75,6 +81,12 @@ tfcb_2023/homeworks/homework02/list.txt
 
 You can make the contents of those files whatever you want (hint: slide 9... )
 
-_Paste your SCRIPT here (not the output)_
+```
+mkdir question02
+
+for i in $(cat /Users/jschwens/CS_Files/tfcb_2024/homeworks/homework02/list.txt); do
+    echo "coding class is so fun i am very hungry" > "question02/file$i.txt"
+done
+```
 
 
